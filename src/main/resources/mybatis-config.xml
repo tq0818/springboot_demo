@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL Map Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="cacheEnabled" value="true" /><!-- 全局映射器启用缓存 -->
+        <setting name="useGeneratedKeys" value="true" /> <!--把新增加的主键赋值到自己定义的keyProperty（id）中-->
+        <setting name="defaultExecutorType" value="REUSE" /> <!--配置和设定执行器-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/> <!--打印sql语句在控制台-->
+    </settings>
+
+    <typeAliases>
+        <package name="com.example.demo.model"/>
+    </typeAliases>
+
+</configuration>
