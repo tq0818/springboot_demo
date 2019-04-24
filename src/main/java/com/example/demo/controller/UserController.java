@@ -17,6 +17,16 @@ public class UserController extends BaseController {
     @Autowired
     private UserService userService;
 
+
+    /**
+     * 测试
+     * @return
+     */
+    @RequestMapping(value = "/test")
+    public String test(){
+        return "test hello";
+    }
+
     /**
      * 添加用户
      *
