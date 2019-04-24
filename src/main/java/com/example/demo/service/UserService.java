@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import com.example.demo.dao.IUserDao;
 import com.example.demo.model.MUser;
-import com.example.demo.utils.BgyResult;
+import com.example.demo.common.BgyResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
