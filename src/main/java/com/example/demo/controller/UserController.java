@@ -24,7 +24,7 @@ public class UserController extends BaseController {
      * @return
      * @throws Exception
      */
-    @RequestMapping(value = "", method = RequestMethod.POST)
+    @RequestMapping(value = "", method = {RequestMethod.POST,RequestMethod.GET})
     public String addUser(@RequestBody String mUserJson) throws Exception {
         String resultInfo = "";
         BgyResult br = new BgyResult();
